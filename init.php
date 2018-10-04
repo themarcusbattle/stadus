@@ -7,4 +7,7 @@
  * Author URI: https://marcusbattle.com
  */
 
-require_once( 'vendor/autoload.php' );
+// Include the dependencies loaded by composer
+if ( file_exists( dirname( 'vendor' ) ) ) {
+    require_once( 'vendor/autoload.php' );
+}
