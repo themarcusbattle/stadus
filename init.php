@@ -8,6 +8,6 @@
  */
 
 // Include the dependencies loaded by composer
-if ( file_exists( dirname( 'vendor' ) ) ) {
+if ( file_exists( dirname( __FILE__ ) . '/vendor' ) ) {
     require_once( 'vendor/autoload.php' );
 }
