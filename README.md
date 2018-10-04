@@ -1,0 +1,1 @@
+# weaverbird-sample-plugin
