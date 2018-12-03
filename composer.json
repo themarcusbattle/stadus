@@ -1,6 +1,6 @@
 {
-    "name": "themarcusbattle/weaverbird-starter-plugin",
-    "description": "A starter plugin that uses the Weaverbird framework",
+    "name": "themarcusbattle/stadus",
+    "description": "Forget email updates. Post a stadus. I mean status.",
     "repositories": [
         {
             "type" : "git",
@@ -8,14 +8,18 @@
         }
     ],
     "require": {
-        "themarcusbattle/weaverbird": "dev-master"
+        "themarcusbattle/weaverbird": "dev-master",
+        "twilio/sdk": "^5.23"
     },
     "autoload": {
         "classmap": [],
         "files": [
+            "vendor/themarcusbattle/weaverbird/api.php",
             "vendor/themarcusbattle/weaverbird/helpers/cpt.php",
             "vendor/themarcusbattle/weaverbird/helpers/metaboxes.php",
-            "vendor/themarcusbattle/weaverbird/helpers/taxonomies.php"
+            "vendor/themarcusbattle/weaverbird/helpers/taxonomies.php",
+            "classes/cpts/status.php",
+            "classes/taxonomies/projects.php"
         ]
     }
 }
