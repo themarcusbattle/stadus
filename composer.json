@@ -18,7 +18,7 @@
             "vendor/themarcusbattle/weaverbird/helpers/cpt.php",
             "vendor/themarcusbattle/weaverbird/helpers/metaboxes.php",
             "vendor/themarcusbattle/weaverbird/helpers/taxonomies.php",
-            "classes/cpts/status.php",
+            "classes/cpts/update.php",
             "classes/taxonomies/projects.php"
         ]
     }

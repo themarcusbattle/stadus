@@ -27,7 +27,7 @@ class Stadus extends Weaverbird\API {
         $this->template_dir = plugin_dir_path( __FILE__ ) . 'templates/';
 
         // Load the CPTs.
-        $this->cpts[] = new Stadus\Classes\CPTs\Status();
+        $this->cpts[] = new Stadus\Classes\CPTs\Update();
 
         // Load the Taxonomies.
         $this->taxonomies[] = new Stadus\Classes\Taxonomies\Project();
@@ -49,7 +49,7 @@ class Stadus extends Weaverbird\API {
 
     public function dont_follow_projects() {
         
-        if ( is_singular( 'status' ) || is_tax( 'project' ) ) {
+        if ( is_singular( 'update' ) || is_tax( 'project' ) ) {
             wp_no_robots();
         }
     }
@@ -66,14 +66,14 @@ class Stadus extends Weaverbird\API {
     }
 
     /**
-     * Get the statuses for a project.
+     * Get the updates for a project.
      */
     public function display_statuses_on_project( \WP_Query $query ) : WP_Query  {
         
         $project = get_query_var( 'project' ); 
 
         if ( ! is_admin() && $query->is_main_query() && $project ) {
-            $query->set( 'post_type', 'status' );
+            $query->set( 'post_type', 'update' );
         }
 
         return $query;

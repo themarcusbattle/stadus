@@ -6,7 +6,7 @@ class Project extends \Weaverbird\Helpers\Taxonomy {
 
     public function __construct() {
         $this->name     = 'project';
-        $this->objects  = [ 'status', 'user' ];
+        $this->objects  = [ 'update', 'user' ];
         $this->settings = [
             'label'        => 'Projects',
             'rewrite'      => [ 'slug' => 'projects' ],
