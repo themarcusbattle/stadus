@@ -12,11 +12,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/themarcusbattle/weaverbird.git",
-                "reference": "7be4b9802103ef44a5a7526334bb494fba6a4fd7"
+                "reference": "eab2d0bfbc6ab659c73fe04226fa441fe255adb6"
             },
             "type": "library",
             "description": "A simple, yet intricate framework to develop beautiful WordPress plugins",
-            "time": "2018-09-22T23:07:18+00:00"
+            "time": "2018-12-03T09:11:53+00:00"
         },
         {
             "name": "twilio/sdk",
